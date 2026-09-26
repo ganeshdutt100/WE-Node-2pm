@@ -1,0 +1,29 @@
+
+Task 1: The File Lifecycle (Basic CRUD)
+Objective: Understand asynchronous fs methods and their execution order.
+Task:
+Create a single Node.js script that performs the following sequentially:
+
+Create a file named bio.txt and write your name in it.
+
+Append your age and city to the same file.
+
+Read the file data and print it to the console.
+
+Rename the file to myBio.txt.
+
+Finally, delete (unlink) the file.
+Constraint: Each step must execute only after the previous one is fully completed (Use Callbacks or Promises to avoid race conditions and errors).
+
+Task 2: Folder & File Manager
+Objective: Combine directory and file operations.
+Task:
+
+Create a folder named exam_results (using fs.mkdir).
+
+Inside that folder, create a file named marks.txt.
+
+Write the data "Math: 90, Science: 85, English: 88" into the file.
+
+Read the file and display the data in the console.
+Challenge: If the exam_results folder already exists, the code should not crash. Instead, it should log a friendly message: "Folder already exists!".
