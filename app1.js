@@ -16,10 +16,10 @@ const fs = require("fs");
 //   console.log("file created Successfully ");
 // });
 
-// fs.appendFile("code1.txt", "\n Hello from node", (err) => {
-//   if (err) throw err;
-//   console.log("data appended successfully ");
-// });
+fs.appendFile("code1.txt", "\n Hello from node", (err) => {
+  if (err) throw err;
+  console.log("data appended successfully ");
+});
 
 // fs.rename("code1.txt", "appendFile.txt", (err) => {
 //   if (err) throw err;
@@ -44,10 +44,10 @@ const fs = require("fs");
 //   console.error("file Read error :  ", err);
 // }
 
-fs.mkdir("data", (err) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  console.log("Directory created successfully ");
-});
+// fs.mkdir("data", (err) => {
+//   if (err) {
+//     console.error(err);
+//     return;
+//   }
+//   console.log("Directory created successfully ");
+// });
