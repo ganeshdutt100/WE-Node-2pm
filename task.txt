@@ -27,3 +27,23 @@ Write the data "Math: 90, Science: 85, English: 88" into the file.
 
 Read the file and display the data in the console.
 Challenge: If the exam_results folder already exists, the code should not crash. Instead, it should log a friendly message: "Folder already exists!".
+
+Write an Express.js server that handles course searches and student enrollments for an E-Learning platform. You will need to combine req.query, req.params, req.body, and req.headers.
+
+Requirements:
+
+GET /courses:
+
+Extract category and difficulty from the URL query parameters.
+
+Return a response string: "Searching for courses in category: [category] with difficulty: [difficulty]".
+
+POST /courses/:courseId/enroll:
+
+Extract courseId from the URL path.
+
+Extract studentName and email from the incoming JSON payload.
+
+Extract the authorization token from the request headers.
+
+Logic: If the authorization token is missing, return an error message with a 401 status code. If the token is present, return a success message: "Student [studentName] successfully enrolled in course [courseId]".
